@@ -17,19 +17,19 @@ straight to its source repository.
 
 ## Projects included
 
-| Project | Type | Source |
+| Project | Type | Live site |
 | --- | --- | --- |
-| Ada's Website | Website | [repo](https://github.com/wooolly1/Adas-website-) |
-| Architect Office | Website | [repo](https://github.com/wooolly1/Adas) |
-| Creative Agency | Website | [repo](https://github.com/wooolly1/creative-agency-website) |
-| Agency Website | Website | [repo](https://github.com/wooolly1/agency-website-) |
-| Proposal Website | Website | [repo](https://github.com/wooolly1/Proposal-website) |
-| Salla Theme | E-commerce | [repo](https://github.com/wooolly1/Salla-theme-1) |
-| Ordinary | E-commerce | [repo](https://github.com/wooolly1/ordinary) |
-| Animal Trading Cards | Interactive | [repo](https://github.com/wooolly1/animal-trading-cards) |
-| Memory Game | Interactive | [repo](https://github.com/wooolly1/memory-game) |
-| Pixel Art Maker | Interactive | [repo](https://github.com/wooolly1/pixel-art-maker) |
-| Rock Paper Scissors | Interactive | [repo](https://github.com/wooolly1/rock-paper-scissors-game) |
+| Ada's Website | Website | [adas.com.sa](https://adas.com.sa) |
+| Architect Office | Website | [adas-liart.vercel.app](https://adas-liart.vercel.app) |
+| Agency Website | Website | [agency-website-eight-opal.vercel.app](https://agency-website-eight-opal.vercel.app) |
+| Proposal Website | Website | [proposal-website-blush.vercel.app](https://proposal-website-blush.vercel.app) |
+| Creative Agency | Website | _Coming soon_ |
+| Salla Theme | E-commerce | _Coming soon_ |
+| Ordinary | E-commerce | _Coming soon_ |
+| Animal Trading Cards | Interactive | _Coming soon_ |
+| Memory Game | Interactive | _Coming soon_ |
+| Pixel Art Maker | Interactive | _Coming soon_ |
+| Rock Paper Scissors | Interactive | _Coming soon_ |
 
 ## Project structure
 

@@ -14,7 +14,7 @@ window.PROJECTS = [
     description:
       "A personal website bringing together my work and identity in one polished, interactive place.",
     tags: ["JavaScript", "HTML", "CSS"],
-    url: "",
+    url: "https://adas.com.sa",
     emoji: "🌐",
     accent: "#7c5cff",
   },
@@ -25,7 +25,7 @@ window.PROJECTS = [
     description:
       "A refined site for an architecture studio — clean grids, generous whitespace, and a focus on the portfolio of built work.",
     tags: ["HTML", "CSS", "Design"],
-    url: "",
+    url: "https://adas-liart.vercel.app",
     emoji: "🏛️",
     accent: "#22b8cf",
   },
@@ -47,7 +47,7 @@ window.PROJECTS = [
     description:
       "A component-driven agency website built with TypeScript for type-safe, maintainable UI.",
     tags: ["TypeScript", "React"],
-    url: "",
+    url: "https://agency-website-eight-opal.vercel.app",
     emoji: "💼",
     accent: "#4dabf7",
   },
@@ -58,7 +58,7 @@ window.PROJECTS = [
     description:
       "An interactive proposal experience built in TypeScript — designed to present an idea beautifully.",
     tags: ["TypeScript", "Interactive"],
-    url: "",
+    url: "https://proposal-website-blush.vercel.app",
     emoji: "💌",
     accent: "#f06595",
   },
