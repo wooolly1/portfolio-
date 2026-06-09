@@ -3,29 +3,29 @@ const grid = document.getElementById("grid");
 const projects = window.PROJECTS || [];
 
 function cardHTML(p, i) {
-  const tags = p.tags.map((t) => `<span class="tag">${t}</span>`).join("");
+  const no = String(i + 1).padStart(2, "0");
+  const tags = p.tags.map((t) => `<span>${t}</span>`).join("");
+  const link = p.url
+    ? `<a class="card__link" href="${p.url}" target="_blank" rel="noopener">View website <span aria-hidden="true">→</span></a>`
+    : `<span class="card__link card__link--soon">Coming soon</span>`;
   return `
     <article class="card" data-category="${p.category}" style="--accent:${p.accent}; --i:${i}">
       <div class="card__top">
-        <span class="card__emoji">${p.emoji}</span>
+        <span class="card__no">${no}</span>
         <span class="card__year">${p.year}</span>
       </div>
+      <div class="card__sector">${p.sector}</div>
       <h3 class="card__title">${p.title}</h3>
       <p class="card__desc">${p.description}</p>
       <div class="card__tags">${tags}</div>
-      ${
-        p.url
-          ? `<a class="card__link" href="${p.url}" target="_blank" rel="noopener">
-               View website <span aria-hidden="true">→</span>
-             </a>`
-          : `<span class="card__link card__link--soon">Coming soon</span>`
-      }
+      ${link}
     </article>`;
 }
 
 function render(filter = "all") {
   const items = projects.filter((p) => filter === "all" || p.category === filter);
-  grid.innerHTML = items.map(cardHTML).join("");
+  // Re-number sequentially within the current view.
+  grid.innerHTML = items.map((p, i) => cardHTML(p, i)).join("");
 }
 
 render();
@@ -42,54 +42,25 @@ filters.addEventListener("click", (e) => {
 
 // ---- Stats counters -------------------------------------------------------
 const totalProjects = projects.length;
-const totalSites = projects.filter(
-  (p) => p.category === "website" || p.category === "ecommerce"
-).length;
+const totalLive = projects.filter((p) => p.url).length;
 
 function countUp(el, target) {
   let n = 0;
-  const step = Math.max(1, Math.round(target / 30));
+  const step = Math.max(1, Math.round(target / 24));
   const tick = () => {
     n = Math.min(target, n + step);
-    el.textContent = n;
+    el.textContent = String(n).padStart(2, "0");
     if (n < target) requestAnimationFrame(tick);
   };
   tick();
 }
 countUp(document.getElementById("statProjects"), totalProjects);
-countUp(document.getElementById("statSites"), totalSites);
+countUp(document.getElementById("statLive"), totalLive);
 
-// ---- Rotating hero word ---------------------------------------------------
-const rotator = document.getElementById("rotator");
-const words = ["tell stories.", "convert visitors.", "feel alive.", "load fast.", "delight people."];
-let wi = 0;
-setInterval(() => {
-  wi = (wi + 1) % words.length;
-  rotator.style.opacity = "0";
-  setTimeout(() => {
-    rotator.textContent = words[wi];
-    rotator.style.opacity = "1";
-  }, 250);
-}, 2600);
-
-// ---- Theme toggle ---------------------------------------------------------
-const themeToggle = document.getElementById("themeToggle");
-const icon = themeToggle.querySelector(".nav__theme-icon");
-const saved = localStorage.getItem("theme");
-if (saved === "light") {
-  document.body.classList.add("light");
-  icon.textContent = "☀️";
-}
-themeToggle.addEventListener("click", () => {
-  const isLight = document.body.classList.toggle("light");
-  icon.textContent = isLight ? "☀️" : "🌙";
-  localStorage.setItem("theme", isLight ? "light" : "dark");
-});
-
-// ---- Navbar shadow on scroll ----------------------------------------------
+// ---- Navbar hairline on scroll --------------------------------------------
 const nav = document.getElementById("nav");
 window.addEventListener("scroll", () => {
-  nav.classList.toggle("is-scrolled", window.scrollY > 20);
+  nav.classList.toggle("is-scrolled", window.scrollY > 16);
 });
 
 // ---- Reveal-on-scroll -----------------------------------------------------
@@ -102,9 +73,9 @@ const io = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.12 }
+  { threshold: 0.1 }
 );
-document.querySelectorAll(".work, .about, .contact, .section-head").forEach((el) => io.observe(el));
+document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
 // ---- Footer year ----------------------------------------------------------
 document.getElementById("year").textContent = new Date().getFullYear();

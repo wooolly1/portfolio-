@@ -3,123 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Walaa Adas — Web Developer & Designer Portfolio</title>
-  <meta name="description" content="Portfolio of Walaa Adas — a collection of websites and interactive projects spanning agency sites, e-commerce themes, and creative web apps." />
+  <title>Walaa Studio — Selected Work</title>
+  <meta name="description" content="Walaa Studio — websites and brand identities for architecture and interior practices. Bilingual by default, restrained by choice. A portfolio of built work." />
+  <link rel="icon" href="assets/walaa-monogram.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Animated background -->
-  <div class="bg-orbs" aria-hidden="true">
-    <span class="orb orb-1"></span>
-    <span class="orb orb-2"></span>
-    <span class="orb orb-3"></span>
-  </div>
-
-  <!-- Navbar -->
-  <header class="nav" id="nav">
-    <a href="#home" class="nav__brand">WA<span>.</span></a>
-    <nav class="nav__links" aria-label="Primary">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="nav__theme" id="themeToggle" aria-label="Toggle color theme">
-      <span class="nav__theme-icon">🌙</span>
-    </button>
+  <!-- TITLE BLOCK -->
+  <header class="titleblock">
+    <div class="tb-cell full"><span class="lbl k">Portfolio · Selected Work</span><span class="v">WALAA STUDIO</span></div>
+    <div class="tb-cell"><span class="lbl k">Discipline</span><span class="v">Web · Brand · Bilingual</span></div>
+    <div class="tb-cell"><span class="lbl k">Studio</span><span class="v">Jeddah · KSA</span></div>
+    <div class="tb-cell"><span class="lbl k">Location</span><span class="v">21.49°N 39.19°E</span></div>
+    <div class="tb-cell"><span class="lbl k">Revision</span><span class="v">2026 — A</span></div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <p class="hero__eyebrow">Web Developer &amp; Designer</p>
-    <h1 class="hero__title">
-      Hi, I'm <span class="grad">Walaa Adas</span>.<br />
-      I build websites that<br />
-      <span class="hero__rotator" id="rotator">tell stories.</span>
-    </h1>
-    <p class="hero__lede">
-      A portfolio of everything I've built — from agency sites and e-commerce
-      themes to playful interactive apps. Each project below links straight
-      to its source.
-    </p>
+  <!-- NAV -->
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a href="#top" class="nav__brand" aria-label="Walaa Studio — home">
+      <img src="assets/walaa-monogram.png" alt="Walaa Studio monogram" />
+    </a>
+    <div class="nav__links">
+      <a href="#work">Work</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="lbl lbl-brass" style="margin-bottom:26px;">Primary Wordmark</div>
+    <img class="hero__logo" src="assets/walaa-studio-wordmark.png" alt="Walaa Studio" width="2200" height="1327" />
+    <div class="dim" style="max-width:300px;margin:36px auto 0;"><span class="tag">design-led</span></div>
+    <p class="hero__tagline">Digital identity for the built environment.</p>
+    <p class="hero__tagline-ar">حضور رقمي لعالم العمارة والتصميم الداخلي.</p>
     <div class="hero__cta">
-      <a href="#work" class="btn btn--primary">View my work</a>
+      <a href="#work" class="btn btn--primary">View work</a>
       <a href="#contact" class="btn btn--ghost">Get in touch</a>
     </div>
     <div class="hero__stats">
       <div><strong id="statProjects">0</strong><span>Projects</span></div>
-      <div><strong id="statSites">0</strong><span>Websites</span></div>
-      <div><strong>5+</strong><span>Years building</span></div>
+      <div><strong id="statLive">0</strong><span>Live sites</span></div>
+      <div><strong>2026</strong><span>Revision A</span></div>
     </div>
   </section>
 
-  <!-- Work -->
-  <section class="work" id="work">
-    <div class="section-head">
-      <h2>Selected Work</h2>
-      <p>Everything I've built, in one place.</p>
+  <!-- WORK -->
+  <section class="work reveal" id="work">
+    <div class="sec-head">
+      <span class="no">01</span><span class="ttl">Selected Work</span>
+      <span class="lbl meta-r">Scale 1:1 · 12-col</span>
     </div>
-
     <div class="filters" id="filters">
       <button class="filter is-active" data-filter="all">All</button>
       <button class="filter" data-filter="website">Websites</button>
       <button class="filter" data-filter="ecommerce">E-commerce</button>
-      <button class="filter" data-filter="app">Interactive</button>
+      <button class="filter" data-filter="app">Lab</button>
     </div>
-
-    <div class="grid" id="grid"><!-- cards injected by script.js --></div>
+    <div class="grid" id="grid"><!-- injected by script.js --></div>
   </section>
 
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="about__inner">
-      <div class="about__text">
-        <h2>About me</h2>
-        <p>
-          I'm a developer and designer who loves turning ideas into clean,
-          functional websites. My work ranges from polished agency and
-          business sites to e-commerce themes and small interactive apps
-          built for the joy of it.
-        </p>
-        <p>
-          I care about thoughtful layouts, fast pages, and details that make
-          an interface feel alive. This portfolio collects everything I've
-          shipped so far — and it keeps growing.
-        </p>
-        <ul class="skills">
-          <li>HTML &amp; CSS</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Responsive Design</li>
-          <li>UI / UX</li>
-          <li>Salla Themes</li>
-          <li>Twig</li>
-        </ul>
-      </div>
-      <div class="about__card">
-        <div class="about__avatar">WA</div>
-        <h3>Walaa Adas</h3>
-        <p>Web Developer &amp; Designer</p>
-        <a href="mailto:walaa.adas@gmail.com" class="btn btn--primary btn--sm">Say hello</a>
-      </div>
+  <!-- STUDIO -->
+  <section class="studio reveal" id="studio">
+    <div class="sec-head"><span class="no">02</span><span class="ttl">The Studio</span></div>
+    <p class="studio__lede">
+      Walaa Studio builds websites and brand identities for architecture and
+      interior practices — bilingual by default, restrained by choice, and
+      <em>detailed like the work it represents.</em>
+    </p>
+    <p class="studio__lede-ar">
+      ولاء ستوديو يصمّم المواقع والهويات للمكاتب المعمارية والديكور — ثنائي اللغة، هادئ ومدروس، ومتقن مثل الأعمال التي يمثّلها.
+    </p>
+
+    <div class="attrs">
+      <div class="attr"><div class="n">01</div><div class="t">Precise</div><div class="a">دقيق</div></div>
+      <div class="attr"><div class="n">02</div><div class="t">Warm</div><div class="a">دافئ</div></div>
+      <div class="attr"><div class="n">03</div><div class="t">Crafted</div><div class="a">مُتقَن</div></div>
     </div>
+
+    <div class="lbl lbl-brass" style="margin-bottom:14px;">Capabilities</div>
+    <ul class="skills">
+      <li>Web Design</li>
+      <li>HTML · CSS</li>
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+      <li>React</li>
+      <li>Brand Identity</li>
+      <li>Bilingual EN · AR</li>
+      <li>Salla Themes</li>
+      <li>Twig</li>
+    </ul>
   </section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2>Let's build something together</h2>
-    <p>Have a project in mind or just want to chat? My inbox is always open.</p>
+  <!-- CONTACT -->
+  <section class="contact reveal" id="contact">
+    <div class="sec-head"><span class="no">03</span><span class="ttl">Contact</span></div>
+    <h2 class="contact__h">Let's design something <em>that lasts.</em></h2>
+    <p>Have a project for a practice that designs space for a living? The studio's inbox is open.</p>
     <div class="contact__links">
       <a href="mailto:walaa.adas@gmail.com" class="btn btn--primary">walaa.adas@gmail.com</a>
       <a href="https://github.com/wooolly1" target="_blank" rel="noopener" class="btn btn--ghost">GitHub →</a>
     </div>
+    <img class="contact__ar" src="assets/walaa-studio-arabic.png" alt="ولاء ستوديو" />
   </section>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Walaa Adas · Built with HTML, CSS &amp; JavaScript</p>
+  <!-- FOOTER -->
+  <footer class="foot">
+    <span class="lbl">Walaa Studio — © <span id="year"></span></span>
+    <span class="lbl">Jeddah · KSA · 21.49°N 39.19°E</span>
   </footer>
 
   <script src="projects.js"></script>
