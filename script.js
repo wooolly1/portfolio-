@@ -13,9 +13,13 @@ function cardHTML(p, i) {
       <h3 class="card__title">${p.title}</h3>
       <p class="card__desc">${p.description}</p>
       <div class="card__tags">${tags}</div>
-      <a class="card__link" href="${p.repo}" target="_blank" rel="noopener">
-        View source <span aria-hidden="true">→</span>
-      </a>
+      ${
+        p.url
+          ? `<a class="card__link" href="${p.url}" target="_blank" rel="noopener">
+               View website <span aria-hidden="true">→</span>
+             </a>`
+          : `<span class="card__link card__link--soon">Coming soon</span>`
+      }
     </article>`;
 }
 

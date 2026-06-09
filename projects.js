@@ -3,6 +3,8 @@
  * Add a new object here and it shows up in the grid automatically.
  *
  * category: "website" | "ecommerce" | "app"
+ * url:      the LIVE website link (what the "View website" button opens).
+ *           Leave as "" and the card shows "Coming soon".
  */
 window.PROJECTS = [
   {
@@ -12,7 +14,7 @@ window.PROJECTS = [
     description:
       "A personal website bringing together my work and identity in one polished, interactive place.",
     tags: ["JavaScript", "HTML", "CSS"],
-    repo: "https://github.com/wooolly1/Adas-website-",
+    url: "",
     emoji: "🌐",
     accent: "#7c5cff",
   },
@@ -23,7 +25,7 @@ window.PROJECTS = [
     description:
       "A refined site for an architecture studio — clean grids, generous whitespace, and a focus on the portfolio of built work.",
     tags: ["HTML", "CSS", "Design"],
-    repo: "https://github.com/wooolly1/Adas",
+    url: "",
     emoji: "🏛️",
     accent: "#22b8cf",
   },
@@ -34,7 +36,7 @@ window.PROJECTS = [
     description:
       "A bold, modern landing site for a creative agency, built to showcase services and convert visitors.",
     tags: ["Web Design", "Landing Page"],
-    repo: "https://github.com/wooolly1/creative-agency-website",
+    url: "",
     emoji: "🎨",
     accent: "#ff6b6b",
   },
@@ -45,7 +47,7 @@ window.PROJECTS = [
     description:
       "A component-driven agency website built with TypeScript for type-safe, maintainable UI.",
     tags: ["TypeScript", "React"],
-    repo: "https://github.com/wooolly1/agency-website-",
+    url: "",
     emoji: "💼",
     accent: "#4dabf7",
   },
@@ -56,7 +58,7 @@ window.PROJECTS = [
     description:
       "An interactive proposal experience built in TypeScript — designed to present an idea beautifully.",
     tags: ["TypeScript", "Interactive"],
-    repo: "https://github.com/wooolly1/Proposal-website",
+    url: "",
     emoji: "💌",
     accent: "#f06595",
   },
@@ -67,7 +69,7 @@ window.PROJECTS = [
     description:
       "A custom storefront theme for the Salla e-commerce platform, tailored for a clean shopping experience.",
     tags: ["Salla", "E-commerce", "Theme"],
-    repo: "https://github.com/wooolly1/Salla-theme-1",
+    url: "",
     emoji: "🛍️",
     accent: "#20c997",
   },
@@ -78,7 +80,7 @@ window.PROJECTS = [
     description:
       "A storefront theme built with Twig templating — structured, reusable, and ready to power a shop.",
     tags: ["Twig", "Theme", "Templating"],
-    repo: "https://github.com/wooolly1/ordinary",
+    url: "",
     emoji: "🏪",
     accent: "#fab005",
   },
@@ -89,7 +91,7 @@ window.PROJECTS = [
     description:
       "A small project that generates a styled information card for any chosen animal.",
     tags: ["HTML", "CSS"],
-    repo: "https://github.com/wooolly1/animal-trading-cards",
+    url: "",
     emoji: "🦊",
     accent: "#ff922b",
   },
@@ -100,7 +102,7 @@ window.PROJECTS = [
     description:
       "A classic card-matching memory game built with JavaScript — flip, match, and beat your best time.",
     tags: ["JavaScript", "Game"],
-    repo: "https://github.com/wooolly1/memory-game",
+    url: "",
     emoji: "🧠",
     accent: "#845ef7",
   },
@@ -111,7 +113,7 @@ window.PROJECTS = [
     description:
       "A drawing tool that lets you color any cell in a customizable grid to create pixel art.",
     tags: ["JavaScript", "Canvas"],
-    repo: "https://github.com/wooolly1/pixel-art-maker",
+    url: "",
     emoji: "🎮",
     accent: "#15aabf",
   },
@@ -122,7 +124,7 @@ window.PROJECTS = [
     description:
       "A command-line Rock, Paper, Scissors game implemented in Python.",
     tags: ["Python", "Game"],
-    repo: "https://github.com/wooolly1/rock-paper-scissors-game",
+    url: "",
     emoji: "✊",
     accent: "#e64980",
   },
