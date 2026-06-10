@@ -1,11 +1,11 @@
 # Walaa Studio — Portfolio
 
-> Digital identity for the built environment.
-> حضور رقمي لعالم العمارة والتصميم الداخلي.
+> Websites and applications, thoughtfully built.
+> تصميم وبناء المواقع والتطبيقات الرقمية.
 
-A single-page portfolio for **Walaa Studio** — websites and brand identities
-for architecture and interior practices. Bilingual by default, restrained by
-choice. Each card links to the live site.
+A single-page portfolio for **Walaa Studio** — design and development of
+websites and applications for brands, businesses, and creators. Bilingual by
+default, restrained by choice. Each card links to the live site.
 
 The design is built directly from the studio's brand identity sheet:
 architectural drafting language (title block, dimension lines, mono labels),
